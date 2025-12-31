@@ -1,0 +1,154 @@
+.event-details-page {
+  padding: 40px 0;
+  min-height: 80vh;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #4f46e5;
+}
+
+.event-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.event-image-large {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.event-image-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.event-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.event-organizer {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.event-description h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.event-description p {
+  color: #4b5563;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.event-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.detail-item {
+  display: flex;
+  gap: 16px;
+}
+
+.detail-icon {
+  font-size: 32px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  color: #1f2937;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.booking-section {
+  padding: 24px;
+  background: #f9fafb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.price-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.price-amount {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+@media (max-width: 968px) {
+  .event-details {
+    grid-template-columns: 1fr;
+  }
+
+  .event-image-large {
+    min-height: 300px;
+  }
+
+  .event-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

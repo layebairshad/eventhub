@@ -1,0 +1,108 @@
+.booking-page {
+  padding: 40px 0;
+  min-height: 80vh;
+}
+
+.booking-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 32px;
+}
+
+.booking-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booking-form h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.event-date {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.attendee-details {
+  margin: 32px 0;
+}
+
+.attendee-details h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.attendee-form {
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.attendee-form h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.booking-summary {
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row.total {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6366f1;
+  padding-top: 16px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.payment-section {
+  margin-top: 24px;
+}
+
+.payment-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.payment-form {
+  margin-top: 24px;
+}
+
+.card-element-wrapper {
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .booking-page h1 {
+    font-size: 28px;
+  }
+}
+
