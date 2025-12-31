@@ -351,13 +351,10 @@ REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_...
 3. Update `REACT_APP_API_URL` to point to your deployed backend
 4. Update `REACT_APP_STRIPE_PUBLISHABLE_KEY` with production keys
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 👤 Author
 
-Your Name
+Layeba Irshad
 
 ## 🙏 Acknowledgments
 
