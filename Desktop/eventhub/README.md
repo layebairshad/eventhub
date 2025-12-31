@@ -1,26 +1,24 @@
 # EventHub - Event Booking System
 
-A full-stack MERN (MongoDB, Express.js, React, Node.js) application for browsing and booking events online. EventHub allows users to discover events, book tickets securely, and manage their bookings, while admins can manage events, pricing, and availability.
+EventHub is a full-stack MERN application that allows users to browse events, book tickets, and manage their bookings online. The system also provides admin functionality to manage events, pricing, and availability.
 
-## 🎯 Features
+This project was built as part of an assignment to demonstrate full-stack development using React, Node.js, Express, and MongoDB.
+
+## Features
 
 ### User Features
-- **Browse Events**: Search and filter events by category, date, and keywords
-- **Event Details**: View comprehensive event information including venue, pricing, and availability
-- **Secure Booking**: Book tickets with secure payment processing via Stripe
-- **My Bookings**: View and manage all your bookings in one place
-- **User Authentication**: Secure registration and login system
-- **Notifications**: Receive booking confirmations and event reminders
-- **Responsive Design**: Fully responsive design that works on all devices
-
+	•	Browse and search events
+	•	View event details (date, venue, price, availability)
+	•	User authentication (register & login)
+	•	Book tickets using Stripe (test mode)
+	•	View booked events under My Bookings
+	•	Responsive UI for desktop and mobile
 ### Admin Features
-- **Event Management**: Create, update, and delete events
-- **Pricing Control**: Set and modify ticket prices
-- **Availability Management**: Manage ticket availability and inventory
-- **Booking Overview**: View all bookings and user information
-- **Featured Events**: Mark events as featured to highlight them
+	•	Create, update, and delete events
+	•	Manage ticket pricing and availability
+	•	View all user bookings
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Node.js** (v18.x or higher)
@@ -40,7 +38,7 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application for browsing
 - **React Toastify** (v9.1.3) - Notifications
 - **date-fns** (v2.30.0) - Date formatting
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 - **Node.js** (v18.x or higher) - [Download](https://nodejs.org/)
@@ -48,7 +46,7 @@ Before you begin, ensure you have the following installed:
 - **npm** or **yarn** package manager
 - **Stripe Account** - [Sign up](https://stripe.com/) (for payment processing)
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -139,7 +137,7 @@ npm start
 
 The frontend will run on `http://localhost:3000`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 eventhub/
@@ -200,7 +198,7 @@ eventhub/
 └── README.md
 ```
 
-## 🔐 Authentication
+## Authentication
 
 The application uses JWT (JSON Web Tokens) for authentication. Users can:
 - Register with name, email, password, and optional phone number
@@ -208,7 +206,7 @@ The application uses JWT (JSON Web Tokens) for authentication. Users can:
 - Access protected routes with valid JWT tokens
 - Admins have elevated permissions for event management
 
-## 💳 Payment Processing
+## Payment Processing
 
 Payment processing is handled through Stripe:
 1. User creates a booking
@@ -222,7 +220,7 @@ Payment processing is handled through Stripe:
 - Decline: `4000 0000 0000 0002`
 - Use any future expiry date, any CVC, and any ZIP code
 
-## 🎫 Booking Flow
+## Booking Flow
 
 1. User browses events and selects an event
 2. User clicks "Book Now" and is redirected to booking page
@@ -232,7 +230,7 @@ Payment processing is handled through Stripe:
 6. Booking is confirmed and tickets are reserved
 7. User receives notification and can view booking in "My Bookings"
 
-## 👨‍💼 Admin Access
+## Admin Access
 
 To create an admin user, you can either:
 1. Manually update the user document in MongoDB:
@@ -244,7 +242,7 @@ To create an admin user, you can either:
    ```
 2. Or modify the registration logic to allow admin creation during development
 
-## 🔔 Notifications
+## Notifications
 
 The system includes a notification system for:
 - Booking confirmations
@@ -253,7 +251,7 @@ The system includes a notification system for:
 
 Notifications are stored in the user document and can be accessed via the API.
 
-## 🎨 Responsive Design
+## Responsive Design
 
 The application is fully responsive and works seamlessly on:
 - Desktop (1920px and above)
@@ -261,7 +259,7 @@ The application is fully responsive and works seamlessly on:
 - Tablet (768px - 1023px)
 - Mobile (320px - 767px)
 
-## 🧪 Testing the Application
+## Testing the Application
 
 ### 1. Create a Test User
 - Register a new account through the frontend
@@ -289,7 +287,7 @@ db.users.insertOne({
 - Complete payment with test card
 - Verify booking appears in "My Bookings"
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 
@@ -319,7 +317,7 @@ db.users.insertOne({
 - Check browser console for errors
 - Ensure Stripe keys match (test/live mode)
 
-## 📝 Environment Variables Summary
+## Environment Variables Summary
 
 ### Backend (.env)
 ```env
@@ -337,7 +335,7 @@ REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_...
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Backend Deployment
 1. Set up MongoDB Atlas or use a cloud MongoDB service
@@ -352,28 +350,18 @@ REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_...
 4. Update `REACT_APP_STRIPE_PUBLISHABLE_KEY` with production keys
 
 
-## 👤 Author
+## Author
 
 Layeba Irshad
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Stripe for payment processing
 - MongoDB for database
 - React team for the amazing framework
 - All open-source contributors
 
-## 📞 Support
+## Notes
 
-For issues, questions, or contributions, please open an issue on the repository.
-
----
-
-**Note:** This is a development version. For production use, ensure:
-- Strong JWT secrets
-- Secure MongoDB connection
-- HTTPS enabled
-- Stripe webhooks properly configured
-- Environment variables secured
-- Error logging and monitoring implemented
-
+This project is intended for learning and evaluation purposes.
+For production use, additional security and optimizations would be required.
